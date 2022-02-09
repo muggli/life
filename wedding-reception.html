@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Shihoko &amp; Ryan | Wedding Reception</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.1.1.js"></script>
+	<script src="js/superfish.js"></script>
+	<script src="js/jquery.equalheights.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.opacityrollover.js"></script>
+	<script src="js/jquery.galleriffic.js"></script>
+	<script type="text/javascript">
+		document.write('<style>.noscript { display: none; }</style>');
+	</script>
+	<script>
+		$(window).load(function () {
+			if ($("#thumbs").length) {
+				$('div.content').css('display', 'block');
+				var onMouseOutOpacity = 1.0;
+				$('#thumbs ul.thumbs li').opacityrollover({
+					mouseOutOpacity: onMouseOutOpacity,
+					mouseOverOpacity: 0.8,
+					fadeSpeed: 'fast',
+					exemptionSelector: '.selected'
+				});
+				var gallery = $('#thumbs').galleriffic({
+					delay: 2500,
+					numThumbs: 12,
+					preloadAhead: 6,
+					enableTopPager: false,
+					enableBottomPager: true,
+					maxPagesToShow: 20,
+					imageContainerSel: '#slideshow',
+					controlsContainerSel: '#controls',
+					captionContainerSel: '#caption',
+					loadingContainerSel: '#loading',
+					renderSSControls: true,
+					renderNavControls: true,
+					playLinkText: 'Play Slideshow',
+					pauseLinkText: 'Pause Slideshow',
+					prevLinkText: '&lsaquo; Previous Photo',
+					nextLinkText: 'Next Photo &rsaquo;',
+					nextPageLinkText: 'Next &rsaquo;',
+					prevPageLinkText: '&lsaquo; Prev',
+					enableHistory: false,
+					autoStart: false,
+					syncTransitions: true,
+					defaultTransitionDuration: 0,
+					onSlideChange: function (prevIndex, nextIndex) {
+						this.find('ul.thumbs').children()
+							.eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+							.eq(nextIndex).fadeTo('fast', 0.8);
+					},
+					onPageTransitionOut: function (callback) {
+						this.fadeTo('fast', 1.0, callback);
+					},
+					onPageTransitionIn: function () {
+						this.fadeTo('fast', 1.0);
+					}
+				});
+			}
+		});
+	</script>
+</head>
+
+<body class="page1">
+	<header>
+		<div class="container_12">
+			<div class="grid_12">
+				<h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+				<div class="menu_block">
+					<nav>
+						<ul class="sf-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="wedding-ceremony.html">Ceremony</a></li>
+							<li class="current"><a href="wedding-reception.html">Reception</a></li>
+							<li><a href="wedding-party.html">Party</a></li>
+							<li><a href="photo-shoot.html">Photo Shoot</a></li>
+							<li><a href="honeymoon-cruise.html">Cruise</a></li>
+							<li><a href="honeymoon-europe.html">Europe</a></li>
+							<li><a href="wedding-reception.html"><img src="images/us.svg" alt="" /></a></li>
+							<li><a href="jpn_wedding-reception.html"><img src="images/jp.svg" alt="" /></a></li>
+						</ul>
+					</nav>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<div class="container_12">
+			<div class="grid_12">
+				<h2><b>Wedding Reception</b> - October 22, 2016<br></br>Minoh, Osaka, Japan</h2>
+				<div class="grid_12 omega alpha">
+					<div id="gallery" class="content advanced_gallery">
+						<div class="slideshow-container">
+							<div id="loading" class="loader"></div>
+							<div id="controls" class="controls"></div>
+							<div id="slideshow" class="slideshow simple"></div>
+						</div>
+					</div>
+				</div>
+				<div class="grid_12 alpha omega">
+					<div id="thumbs" class="navigation">
+						<ul class="thumbs noscript">
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0097.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0097.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0098.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0098.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0099.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0099.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0100.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0100.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0101.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0101.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0102.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0102.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0103.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0103.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0104.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0104.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0105.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0105.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0106.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0106.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0107.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0107.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0108.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0108.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0109.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0109.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0110.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0110.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0111.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0111.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0112.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0112.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0113.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0113.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0114.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0114.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0115.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0115.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0116.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0116.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0117.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0117.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0118.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0118.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0119.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0119.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0120.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0120.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0121.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0121.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0122.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0122.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0123.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0123.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0124.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0124.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0125.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0125.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0126.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0126.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0127.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0127.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0128.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0128.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0129.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0129.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0130.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0130.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0131.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0131.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0132.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0132.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0133.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0133.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0134.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0134.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0135.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0135.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0136.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0136.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0137.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0137.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0138.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0138.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0139.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0139.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0140.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0140.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0141.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0141.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0142.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0142.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0143.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0143.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0144.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0144.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0145.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0145.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0146.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0146.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0147.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0147.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0148.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0148.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0149.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0149.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0150.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0150.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0151.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0151.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0152.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0152.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0153.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0153.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0154.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0154.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0155.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0155.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0156.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0156.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0157.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0157.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0158.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0158.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0159.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0159.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0160.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0160.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0161.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0161.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0162.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0162.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0163.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0163.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0164.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0164.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0165.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0165.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0166.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0166.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0167.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0167.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0168.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0168.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0169.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0169.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0170.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0170.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0171.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0171.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0172.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0172.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0173.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0173.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0174.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0174.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0175.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0175.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0176.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0176.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0177.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0177.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0178.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0178.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0179.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0179.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0180.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0180.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0181.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0181.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0182.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0182.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0183.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0183.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0184.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0184.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0185.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0185.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0186.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0186.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0187.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0187.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0188.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0188.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0189.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0189.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0190.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0190.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0191.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0191.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0192.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0192.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0193.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0193.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0194.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0194.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0195.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0195.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0196.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0196.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0197.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0197.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0198.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0198.jpg" alt=""></a></li>
+							<li> <a class="thumb img_inner" href="images/Wedding_Reception/WA_Slideshow_0199.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0199.jpg" alt=""></a></li>
+							<li class="last"> <a class="thumb img_inner"
+									href="images/Wedding_Reception/WA_Slideshow_0200.jpg"> <img
+										src="images/Wedding_Reception/WA_Thumb_0200.jpg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container_12">
+			<div class="grid_12">
+				<p><a href="index.html" class="footer_logo"><img src="images/footer_logo.png" alt=""></a></p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+</body>
+
+</html>
