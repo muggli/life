@@ -214,7 +214,6 @@
 							
 							el.each(function(){
 								var src=_.next
-								,ie=$.browser.msie&&$.browser.version<9
 								,buff=$(new Image())
 								,canvas=ie?$(new Image()):$('<canvas></canvas>')
 								,width,height
@@ -887,10 +886,6 @@
 							var _fu=function(){
 								//if(_.banner)
 									//$.when(_.banner).then(function(){_.banner.detach()})
-								if($.browser.msie&&$.browser.version<9&&_.preset=='zoomer')
-									_.preset='simpleFade'
-									,_.duration=1000
-								
 								if(_.preset_!=_.preset)
 									 _.du=_.duration,
 									 _.ea=_.easing,
